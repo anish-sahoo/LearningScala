@@ -139,6 +139,17 @@ def tryCatch() =
   catch
     case e: ArithmeticException => println("ArithmeticException")
     case e: Exception => println("Exception")  
+  finally 
+    println("finally")
+
+def whileLoops() =
+  var i = 0
+  while i < 3 do
+    println(i)
+    i += 1 // mutable
+  
+  i = 0
+  while i < 3 do i = i+1 // single line
 
 @main def run() =
   // input()
@@ -147,4 +158,10 @@ def tryCatch() =
   lambda()
   pipeline()
   prints()
+  ifelse()
+  forLoops()
+  forExpressions()
+  matchExpressions()
+  tryCatch()
+
 
