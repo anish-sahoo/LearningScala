@@ -17,7 +17,7 @@ class Cat(name: String) extends Speaker, TailWagger, Runner:
   override def startRunning(): Unit = println("Yeah ... I don’t run")
   override def stopRunning(): Unit = println("No need to stop")
 
-@main def main() =
+@main def doStuff0(): Unit =
     val d = Dog("Rover")
     println(d.speak())      // prints "Woof!"
 
